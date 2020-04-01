@@ -1,0 +1,17 @@
+[overview]
+other = "Übersicht"
+
+[other_languages]
+other = "Weitere Sprachen"
+
+[master_rules]
+other = "Hauptregeln"
+
+[main_documents]
+other = "Hauptdokumente"
+
+[documents]
+other = "Dokumente"
+
+[editions]
+other = "Editionen"

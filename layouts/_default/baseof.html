@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='{{ .Site.Language | default "en" }}'>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#1fab89">
+
+  <script type="module">
+    // before anything else loads
+    if (window.location.protocol === 'http:' && window.location.hostname !== 'localhost') {
+      window.location.protocol = 'https:'
+    }
+  </script>
+
+  {{ range .AlternativeOutputFormats }}
+  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+  {{ end }}
+
+  {{ $style := resources.Get "styles/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" />
+
+  <title>{{ block "document_title" . }}{{ .Site.Title }}{{ end }}</title>
+</head>
+<body>
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container">
+      <div class="page-title">
+        <div>
+          <h1 class="title">
+            {{ block "header_title" . }}EEvent Rulebooks{{ end }}
+          </h1>
+          <h2 class="subtitle">
+            {{ range .Translations }}
+            <a rel="alternate" hreflang="{{ .Language.Lang }}" href="{{.Permalink}}">{{ .Language.LanguageName }}</a>
+            {{ end }}
+          </h2>
+        </div>
+        <img class="logo" src="https://15.eevent.ch/styles/kick/img/eevent_logo_icon_white.svg"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="content">
+  {{ block "main" . }}
+  <h1>nothing to see here</h1>
+  {{ end }}
+</div>
+</body>
+</html>

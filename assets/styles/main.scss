@@ -1,0 +1,106 @@
+@import url("https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css");
+
+/***
+ * Variables & Mixins
+ */
+
+:root {
+  --eevent-blue: #18275A;
+  --eevent-green: #1fab89;
+
+  --main-color: var(--eevent-green);
+
+  --background-color: #f9f9f9;
+  --text-color: #1c1c1e;
+
+  --max-page-width: 50em;
+}
+
+// someday there will be a dark mode
+//@media (prefers-color-scheme: dark) {
+//  :root {
+//    --background-color: #1c1c1e;
+//    --text-color: #f2f2f7;
+//  }
+//}
+
+/***
+ * Basics
+ */
+html {
+
+
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+}
+
+h1,h2,h3 {
+  color: var(--main-color);
+}
+
+a {
+  color: var(--main-color);
+}
+
+/***
+ * Bulma Overrides
+ */
+
+// header
+.hero.is-primary {
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: var(--max-page-width);
+}
+
+/***
+ * General layout
+ */
+
+.page-title {
+  display: flex;
+  justify-content: space-between;
+  >.logo {
+    height: 100px;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  >div>.subtitle {
+    font-size: 1em;
+    a:after {
+      content: " | ";
+    }
+    a:last-child:after {
+      content: "";
+    }
+  }
+}
+
+.content {
+  margin: auto;
+  max-width: var(--max-page-width);
+  padding: 1em;
+}
+
+/*
+ * Rulebook extras
+ */
+
+.rulebook-helpers {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.rulebook {
+  text-align: justify;
+}

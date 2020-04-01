@@ -1,0 +1,13 @@
+﻿stages:
+  - deploy
+
+pages:
+  stage: deploy
+  image: monachus/hugo
+  only:
+    - master
+  artifacts:
+    paths:
+      - public
+  script:
+    - hugo

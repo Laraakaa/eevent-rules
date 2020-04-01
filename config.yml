@@ -1,0 +1,22 @@
+title: EEvent Rulebook Directory
+baseURL: 'https://rules.eevent.ch/'
+
+markup:
+  tableOfContents:
+    startLevel: 1
+    endLevel: 2
+    ordered: false
+
+DefaultContentLanguage: en
+languages:
+  en:
+    languageName: English
+    weight: 1
+  de:
+    weight: 2
+    languageName: Deutsch
+    title: EEvent Regeln Verzeichniss
+#  fr:
+#    weight: 3
+#    languageName: Français
+#    title: Répertoire des règles EEvent

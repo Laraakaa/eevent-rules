@@ -1,0 +1,16 @@
+{{ define "document_title" }}{{.CurrentSection.Params.Edition}} | {{.Title}}{{end}}
+{{ define "header_title" }}{{.Title}}{{end}}
+
+{{ define "main" }}
+<div class="rulebook-helpers">
+  <a href="{{.Parent.Permalink}}">{{ i18n "overview" }}</a>
+  <a href='{{ "/misc/master-rulebook" | absLangURL }}'>{{ i18n "master_rules" }}</a>
+</div>
+
+<hr>
+<div class="rulebook">
+  {{.TableOfContents}}
+  <hr/>
+  {{ .Content }}
+</div>
+{{ end }}

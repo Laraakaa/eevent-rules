@@ -6,13 +6,6 @@
   <meta name="referrer" content="no-referrer">
   <meta name="theme-color" content="#1fab89">
 
-  <script type="module">
-    // before anything else loads
-    if (window.location.protocol === 'http:' && window.location.hostname !== 'localhost') {
-      window.location.protocol = 'https:'
-    }
-  </script>
-
   {{ range .AlternativeOutputFormats }}
   <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
   {{ end }}

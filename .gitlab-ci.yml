@@ -1,4 +1,4 @@
-﻿stages:
+stages:
   - deploy
 
 pages:
@@ -10,4 +10,5 @@ pages:
     paths:
       - public
   script:
-    - hugo
+    - hugo  
+

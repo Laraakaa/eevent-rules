@@ -10,5 +10,5 @@ pages:
     paths:
       - public
   script:
-    - hugo  
+    - hugo --minify 
 

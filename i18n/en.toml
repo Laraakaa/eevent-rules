@@ -15,3 +15,6 @@ other = "Documents"
 
 [editions]
 other = "Editions"
+
+[table_of_contents]
+other = "Table of Contents"

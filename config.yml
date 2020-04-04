@@ -2,6 +2,14 @@ title: EEvent Rulebook Directory
 baseURL: 'https://rules.eevent.ch/'
 
 enableGitInfo: true
+enableRobotsTXT: true
+
+disableKinds: [
+  "sitemap",
+  "RSS",
+  "taxonomy",
+  "taxonomyTerm"
+]
 
 markup:
   goldmark:

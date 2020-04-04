@@ -1,7 +1,12 @@
 title: EEvent Rulebook Directory
 baseURL: 'https://rules.eevent.ch/'
 
+enableGitInfo: true
+
 markup:
+  goldmark:
+    renderer:
+      unsafe: true
   tableOfContents:
     startLevel: 1
     endLevel: 2

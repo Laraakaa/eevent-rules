@@ -3,16 +3,17 @@
 
 {{ define "main" }}
 <div class="rulebook-helpers">
-  <a href="{{.Parent.Permalink}}">{{ i18n "overview" }}</a>
-  <a href='{{ "/misc/master-rulebook" | absLangURL }}'>{{ i18n "master_rules" }}</a>
+  <a rel="preload" href="{{.Parent.Permalink}}">{{ i18n "overview" }}</a>
+  <a rel="preload" href='{{ "/misc/master-rulebook" | absLangURL }}'>{{ i18n "master_rules" }}</a>
 </div>
 
-<hr>
-<div class="rulebook">
-  <details>
+<hr class="hide-print">
+<main class="rulebook content">
+  <details open>
     <summary>{{ i18n "table_of_contents" }}</summary>
     {{.TableOfContents}}
   </details>
+
   {{ .Content }}
-</div>
+</main>
 {{ end }}

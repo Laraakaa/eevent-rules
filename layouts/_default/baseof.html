@@ -10,13 +10,16 @@
   <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
   {{ end }}
 
-  {{ $style := resources.Get "styles/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" />
+  {{ $styleScreen := resources.Get "styles/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $styleScreen.Permalink }}" integrity="{{ $styleScreen.Data.Integrity }}" media="screen" />
+  {{ $stylePrint := resources.Get "styles/print.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $stylePrint.Permalink }}" integrity="{{ $stylePrint.Data.Integrity }}" media="print" />
+
 
   <title>{{ block "document_title" . }}{{ .Site.Title }}{{ end }}</title>
 </head>
 <body>
-<section class="hero is-primary">
+<div class="hero is-primary">
   <div class="hero-body">
     <div class="container">
       <div class="page-title">
@@ -34,7 +37,7 @@
       </div>
     </div>
   </div>
-</section>
+</div>
 
 <div class="content">
   {{ block "main" . }}

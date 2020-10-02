@@ -9,5 +9,3 @@ The rules may be available in several languages. If the individual rules differ,
 A rulebook may change this rule, but it must be clearly stated at the top of the document.
 
 TBA...
-
-stuff

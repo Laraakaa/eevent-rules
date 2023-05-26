@@ -23,8 +23,8 @@ The tournament is played in the following stages:
 
 | State      | Description                                                                                                                             |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| Qualifiers | 4 groups with Swiss Rounds in the Best-of-1 format. The top 4 teams qualify for the second stage. The Swiss rounds will not be seeded.  |
-| Finals     | Single Elimination in the Best-of-3 format. The Elimination Bracket will be seeded according to the Swiss results (example. 1st vs 4th) |
+| Qualifiers | X groups with Swiss Rounds in the Best-of-X format. The top X teams qualify for the second stage. The Swiss rounds will not be seeded.  |
+| Finals     | Single Elimination in the Best-of-X format. The Elimination Bracket will be seeded according to the Swiss results (example. 1st vs 4th) |
 
 #### Side Selection
 

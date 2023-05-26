@@ -3,12 +3,17 @@ stages:
 
 pages:
   stage: deploy
-  image: monachus/hugo
+  image: mcr.microsoft.com/powershell:lts-7.2-alpine-3.14
   only:
     - master
   artifacts:
     paths:
       - public
   script:
-    - hugo --minify 
+    - apk add hugo
+    - pwsh ./tasks.ps1 sync-content
+    - cd website
+    - hugo --minify
+    - cd ..
+    - mv ./website/public .
 

@@ -10,10 +10,11 @@ pages:
     paths:
       - public
   script:
-    - apk add hugo
-    - pwsh ./tasks.ps1 sync-content
-    - cd website
-    - hugo --minify
-    - cd ..
-    - mv ./website/public .
+    - echo hello world
+#    - apk add hugo
+#    - pwsh ./tasks.ps1 sync-content
+#    - cd website
+#    - hugo --minify
+#    - cd ..
+#    - mv ./website/public .
 

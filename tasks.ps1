@@ -108,6 +108,7 @@ switch ($TaskName) {
     "build" {
         Set-Location $websiteFolder
         hugo --minify
+        Move-Item -Force ./public ..
     }
 
     "clean" {

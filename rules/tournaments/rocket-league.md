@@ -17,15 +17,7 @@ Please make sure that each member of your team has an account.
 
 ### Tournament Format
 
-The tournament is played in the following stages:
-
-| State      | Type               | Format | Description                                                         |
-|------------|--------------------|--------|---------------------------------------------------------------------|
-| Qualifiers | Swiss Rounds       | Bo3    | Top 16 teams qualify for the playoffs.                              |
-| Playoffs   | Double Elimination | Bo5    | The bracket will be seeded according to the result of the qualifier |
-| Finals     |                    | Bo7    |                                                                     |
-
-The amount of swiss rounds played during the qualifiers will adapt based on the total amount of teams participating.
+Depends on the amount of players. Will be decided during the captain briefing.
 
 ### Schedule
 

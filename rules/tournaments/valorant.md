@@ -21,14 +21,14 @@ The official tournament page will be shared via the main communication channel e
 
 The tournament is played in the following stages:
 
-| State   | Type         | Format | Description                                                                |
-|---------|--------------|--------|----------------------------------------------------------------------------|
-| Stage 1 | Swiss Rounds | Bo1    | The top 4 teams qualify for the next stage. This stage will not be seeded. |
-| Stage 2 | Playoffs     | Bo3    | The bracket will be seeded according to the result of the first stage      |
+| State   | Type        | Format | Description                                                                |
+|---------|-------------|--------|----------------------------------------------------------------------------|
+| Stage 1 | Round Robin | Bo1    | The top 4 teams qualify for the next stage. This stage will not be seeded. |
+| Stage 2 | Playoffs    | Bo3    | First vs Second in Final, Third vs Fourth in 3rd place match               |
 
 ### Schedule
 
-First appointment for the team representative will be the briefing on Saturday at 10:00. The Tournament itself will start one hour later at 11:00.
+First appointment for the team representative will be the briefing on Sunday at 13:30. The Tournament itself will start one hour later at 14:30.
 All players must be at the location at the start of the tournament.
 
 ### Game Settings
@@ -41,13 +41,15 @@ All players must be at the location at the start of the tournament.
 
 ### Map pool
 
+* Split
 * Bind
 * Haven
-* Ascent
-* Icebox
-* Breeze
-* Fracture
 * Pearl
+* Fracture
+* Ascent
+* Lotus
+
+(competitive map pool of current season)
 
 ### Map Selection Process
 

@@ -27,7 +27,9 @@ jobs:
           ./tasks.ps1 build
 
       - name: Set CNAME
-        run: echo "rules.eevent.ch" > ./website/public/CNAME
+        run: |
+          mkdir -p ./website/public
+          echo "rules.eevent.ch" > ./website/public/CNAME
 
       - name: Deploy to GitHub Pages
         if: ${{ github.ref == 'refs/heads/master' }}
